@@ -1,7 +1,7 @@
 const Store = {
-    menu: null,
-    cart: []
-}
+  menu: null,
+  cart: [],
+};
 
-//ECMA Script module 
-export default Store; 
+//ECMA Script module
+export default Store;

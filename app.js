@@ -1,16 +1,17 @@
+// import
+import Store from './services/Store.js';
+import API from './services/API.js';
+import { loadData } from './services/Menu.js';
+import Router from './services/Router.js';
+
+// make app.js global:
+window.app = {}
+app.store = Store; // when access anywhere - it is now global 
+app.router = Router; 
 
 // it's better to wait for the event for manipulation 
-window.addEventListener("DOMContentLoaded", () => {
-    let nav = document.querySelector("nav"); 
-    console.log(nav);
-    nav.innerHTML = `
-    <h2>Hello DOM</h2>
-    <p>This is html within a js string</p>
-    `
+window.addEventListener("DOMContentLoaded", async () => {
+   loadData();  // call the API - load data
+   app.router.init(); // initilize the router 
 });
 
-// DOMContentLoaded: initialize ASAP; happens before rendering
-
-window.addEventListener("DOMContentLoaded", event => {
-
-})

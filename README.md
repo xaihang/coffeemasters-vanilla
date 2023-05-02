@@ -8,6 +8,7 @@ Building a coffee ordering application using plain vanilla javascript
 - document fragment; query for specific part of document 
 - storing variables and pre-fetch them when you query 
 - you can create alais name variable to reduce verbose 
+- how can we upgrade or convert it to a module? html type = module &then import it into the file
 
 ## dynamic query on the DOM
 
@@ -16,5 +17,6 @@ Building a coffee ordering application using plain vanilla javascript
 ```js
   <script src="app.js" defer></script> 
 ```
-1. create `services` folder && `Store.js` && `API.js` files
+1. create `services` folder && `Store.js` && `API.js` && `Menu.js` files
 
+1. create router `Router.js`
