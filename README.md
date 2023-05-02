@@ -9,6 +9,7 @@ Building a coffee ordering application using plain vanilla javascript
 - storing variables and pre-fetch them when you query 
 - you can create alais name variable to reduce verbose 
 - how can we upgrade or convert it to a module? html type = module &then import it into the file
+- when a browser finds an unknown elements it just ignores it
 
 ## dynamic query on the DOM
 
